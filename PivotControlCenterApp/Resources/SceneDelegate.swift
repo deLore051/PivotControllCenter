@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Firebase
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -14,10 +15,15 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
-        
         let window = UIWindow(windowScene: windowScene)
-        let vc = HomeViewController()
-        window.rootViewController = vc
+        if Auth.auth().currentUser == nil {
+            let navVC = UINavigationController(rootViewController: SignInViewController())
+            navVC.navigationItem.largeTitleDisplayMode = .always
+            navVC.navigationBar.prefersLargeTitles = true
+            navVC.modalPresentationStyle = .fullScreen
+            window.rootViewController = navVC
+        }
+        window.rootViewController = TabBarViewController()
         window.makeKeyAndVisible()
         self.window = window
         

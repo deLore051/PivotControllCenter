@@ -8,6 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		045464652796D419000B5F5F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 045464642796D419000B5F5F /* GoogleService-Info.plist */; };
+		045464682796E390000B5F5F /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045464672796E390000B5F5F /* SignInViewController.swift */; };
+		0454646A2796E3A2000B5F5F /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045464692796E3A2000B5F5F /* SignUpViewController.swift */; };
+		0454646E2796E906000B5F5F /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0454646D2796E906000B5F5F /* AuthManager.swift */; };
+		045464702796E917000B5F5F /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0454646F2796E917000B5F5F /* StorageManager.swift */; };
+		045464722796E925000B5F5F /* FirestoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045464712796E925000B5F5F /* FirestoreManager.swift */; };
+		045464742796E935000B5F5F /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045464732796E935000B5F5F /* DatabaseManager.swift */; };
+		045464762796EE31000B5F5F /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045464752796EE31000B5F5F /* TabBarViewController.swift */; };
+		045464782796EF38000B5F5F /* ProjectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045464772796EF38000B5F5F /* ProjectsViewController.swift */; };
+		0454647A2796F792000B5F5F /* NewProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045464792796F792000B5F5F /* NewProjectViewController.swift */; };
 		04D4268F2796B9F2006F6E22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D4268E2796B9F2006F6E22 /* AppDelegate.swift */; };
 		04D426912796B9F2006F6E22 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D426902796B9F2006F6E22 /* SceneDelegate.swift */; };
 		04D426932796B9F2006F6E22 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D426922796B9F2006F6E22 /* HomeViewController.swift */; };
@@ -18,6 +27,15 @@
 
 /* Begin PBXFileReference section */
 		045464642796D419000B5F5F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		045464672796E390000B5F5F /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		045464692796E3A2000B5F5F /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		0454646D2796E906000B5F5F /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		0454646F2796E917000B5F5F /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		045464712796E925000B5F5F /* FirestoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreManager.swift; sourceTree = "<group>"; };
+		045464732796E935000B5F5F /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		045464752796EE31000B5F5F /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		045464772796EF38000B5F5F /* ProjectsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsViewController.swift; sourceTree = "<group>"; };
+		045464792796F792000B5F5F /* NewProjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewProjectViewController.swift; sourceTree = "<group>"; };
 		04D4268B2796B9F2006F6E22 /* PivotControlCenterApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PivotControlCenterApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04D4268E2796B9F2006F6E22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04D426902796B9F2006F6E22 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,7 +63,8 @@
 		0454645E2796CCB7000B5F5F /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				04D426922796B9F2006F6E22 /* HomeViewController.swift */,
+				045464662796E362000B5F5F /* Auth */,
+				0454646B2796E3AB000B5F5F /* Core */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -77,6 +96,37 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		045464662796E362000B5F5F /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				045464672796E390000B5F5F /* SignInViewController.swift */,
+				045464692796E3A2000B5F5F /* SignUpViewController.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		0454646B2796E3AB000B5F5F /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				045464752796EE31000B5F5F /* TabBarViewController.swift */,
+				045464792796F792000B5F5F /* NewProjectViewController.swift */,
+				04D426922796B9F2006F6E22 /* HomeViewController.swift */,
+				045464772796EF38000B5F5F /* ProjectsViewController.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		0454646C2796E3DD000B5F5F /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				0454646D2796E906000B5F5F /* AuthManager.swift */,
+				045464732796E935000B5F5F /* DatabaseManager.swift */,
+				045464712796E925000B5F5F /* FirestoreManager.swift */,
+				0454646F2796E917000B5F5F /* StorageManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
 		04D426822796B9F2006F6E22 = {
 			isa = PBXGroup;
 			children = (
@@ -98,9 +148,10 @@
 		04D4268D2796B9F2006F6E22 /* PivotControlCenterApp */ = {
 			isa = PBXGroup;
 			children = (
+				0454646C2796E3DD000B5F5F /* Managers */,
 				045464632796CCE8000B5F5F /* Resources */,
-				045464612796CCD7000B5F5F /* Views */,
 				0454645F2796CCC4000B5F5F /* Model */,
+				045464612796CCD7000B5F5F /* Views */,
 				0454645E2796CCB7000B5F5F /* Controller */,
 			);
 			path = PivotControlCenterApp;
@@ -120,7 +171,6 @@
 				12983CF9DA5FC51E9701E8E6 /* Pods-PivotControlCenterApp.debug.xcconfig */,
 				E9D1BF16835BA07B81188CAC /* Pods-PivotControlCenterApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -239,9 +289,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				045464682796E390000B5F5F /* SignInViewController.swift in Sources */,
+				0454647A2796F792000B5F5F /* NewProjectViewController.swift in Sources */,
+				0454646E2796E906000B5F5F /* AuthManager.swift in Sources */,
+				045464782796EF38000B5F5F /* ProjectsViewController.swift in Sources */,
 				04D426932796B9F2006F6E22 /* HomeViewController.swift in Sources */,
+				045464702796E917000B5F5F /* StorageManager.swift in Sources */,
 				04D4268F2796B9F2006F6E22 /* AppDelegate.swift in Sources */,
 				04D426912796B9F2006F6E22 /* SceneDelegate.swift in Sources */,
+				0454646A2796E3A2000B5F5F /* SignUpViewController.swift in Sources */,
+				045464722796E925000B5F5F /* FirestoreManager.swift in Sources */,
+				045464762796EE31000B5F5F /* TabBarViewController.swift in Sources */,
+				045464742796E935000B5F5F /* DatabaseManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,11 +445,10 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = XHDAA27FF6;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = PivotControlCenterApp/Info.plist;
+				INFOPLIST_FILE = PivotControlCenterApp/Resources/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = PCC;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
@@ -399,7 +457,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.PivotControlCenterApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.stefandojcinovic.PivotControlCenterApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -419,11 +477,10 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = XHDAA27FF6;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = PivotControlCenterApp/Info.plist;
+				INFOPLIST_FILE = PivotControlCenterApp/Resources/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = PCC;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
@@ -432,7 +489,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.PivotControlCenterApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.stefandojcinovic.PivotControlCenterApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
