@@ -22,8 +22,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             navVC.navigationBar.prefersLargeTitles = true
             navVC.modalPresentationStyle = .fullScreen
             window.rootViewController = navVC
+        } else {
+            window.rootViewController = TabBarViewController()
         }
-        window.rootViewController = TabBarViewController()
         window.makeKeyAndVisible()
         self.window = window
         
