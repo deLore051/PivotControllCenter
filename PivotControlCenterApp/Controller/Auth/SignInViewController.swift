@@ -69,6 +69,9 @@ class SignInViewController: UIViewController {
         view.backgroundColor = .systemBackground
         title = "Sign In"
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Sign Up", style: .done, target: self, action: #selector(signUpButtonTapped(sender:)))
+        addTargets()
+        addSubviews()
+        addConstraints()
     }
     
     @objc private func signInButtonTapped(sender: UIButton) {
@@ -102,7 +105,7 @@ class SignInViewController: UIViewController {
         let vc = SignUpViewController()
         vc.navigationItem.largeTitleDisplayMode = .always
         vc.modalPresentationStyle = .fullScreen
-        navigationController?.present(vc, animated: true, completion: nil)
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     private func addTargets() {
