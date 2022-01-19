@@ -17,6 +17,8 @@
 		045464762796EE31000B5F5F /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045464752796EE31000B5F5F /* TabBarViewController.swift */; };
 		045464782796EF38000B5F5F /* ProjectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045464772796EF38000B5F5F /* ProjectsViewController.swift */; };
 		0454647A2796F792000B5F5F /* NewProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045464792796F792000B5F5F /* NewProjectViewController.swift */; };
+		047B8480279822360073BB40 /* ErrorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047B847F279822360073BB40 /* ErrorManager.swift */; };
+		047B8482279826710073BB40 /* UIButton+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047B8481279826710073BB40 /* UIButton+Additions.swift */; };
 		04D4268F2796B9F2006F6E22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D4268E2796B9F2006F6E22 /* AppDelegate.swift */; };
 		04D426912796B9F2006F6E22 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D426902796B9F2006F6E22 /* SceneDelegate.swift */; };
 		04D426932796B9F2006F6E22 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D426922796B9F2006F6E22 /* HomeViewController.swift */; };
@@ -36,6 +38,8 @@
 		045464752796EE31000B5F5F /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		045464772796EF38000B5F5F /* ProjectsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsViewController.swift; sourceTree = "<group>"; };
 		045464792796F792000B5F5F /* NewProjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewProjectViewController.swift; sourceTree = "<group>"; };
+		047B847F279822360073BB40 /* ErrorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorManager.swift; sourceTree = "<group>"; };
+		047B8481279826710073BB40 /* UIButton+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Additions.swift"; sourceTree = "<group>"; };
 		04D4268B2796B9F2006F6E22 /* PivotControlCenterApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PivotControlCenterApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04D4268E2796B9F2006F6E22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04D426902796B9F2006F6E22 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -92,6 +96,7 @@
 				04D426902796B9F2006F6E22 /* SceneDelegate.swift */,
 				045464642796D419000B5F5F /* GoogleService-Info.plist */,
 				04D4269C2796B9F3006F6E22 /* Info.plist */,
+				047B8481279826710073BB40 /* UIButton+Additions.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -123,6 +128,7 @@
 				045464732796E935000B5F5F /* DatabaseManager.swift */,
 				045464712796E925000B5F5F /* FirestoreManager.swift */,
 				0454646F2796E917000B5F5F /* StorageManager.swift */,
+				047B847F279822360073BB40 /* ErrorManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -291,6 +297,7 @@
 			files = (
 				045464682796E390000B5F5F /* SignInViewController.swift in Sources */,
 				0454647A2796F792000B5F5F /* NewProjectViewController.swift in Sources */,
+				047B8480279822360073BB40 /* ErrorManager.swift in Sources */,
 				0454646E2796E906000B5F5F /* AuthManager.swift in Sources */,
 				045464782796EF38000B5F5F /* ProjectsViewController.swift in Sources */,
 				04D426932796B9F2006F6E22 /* HomeViewController.swift in Sources */,
@@ -299,6 +306,7 @@
 				04D426912796B9F2006F6E22 /* SceneDelegate.swift in Sources */,
 				0454646A2796E3A2000B5F5F /* SignUpViewController.swift in Sources */,
 				045464722796E925000B5F5F /* FirestoreManager.swift in Sources */,
+				047B8482279826710073BB40 /* UIButton+Additions.swift in Sources */,
 				045464762796EE31000B5F5F /* TabBarViewController.swift in Sources */,
 				045464742796E935000B5F5F /* DatabaseManager.swift in Sources */,
 			);
