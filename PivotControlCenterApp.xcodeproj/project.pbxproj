@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0452D36C2798234400E27C15 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0452D36B2798234400E27C15 /* UserInfo.swift */; };
 		045464652796D419000B5F5F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 045464642796D419000B5F5F /* GoogleService-Info.plist */; };
 		045464682796E390000B5F5F /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045464672796E390000B5F5F /* SignInViewController.swift */; };
 		0454646A2796E3A2000B5F5F /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045464692796E3A2000B5F5F /* SignUpViewController.swift */; };
@@ -24,10 +25,12 @@
 		04D426932796B9F2006F6E22 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D426922796B9F2006F6E22 /* HomeViewController.swift */; };
 		04D426982796B9F3006F6E22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04D426972796B9F3006F6E22 /* Assets.xcassets */; };
 		04D4269B2796B9F3006F6E22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04D426992796B9F3006F6E22 /* LaunchScreen.storyboard */; };
+		04E4EB8B2799938D00C5D2FC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E4EB8A2799938D00C5D2FC /* Constants.swift */; };
 		D073BA273DBF38BA2D510852 /* Pods_PivotControlCenterApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD1CAC84C06743D86BDC0B55 /* Pods_PivotControlCenterApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0452D36B2798234400E27C15 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 		045464642796D419000B5F5F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		045464672796E390000B5F5F /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		045464692796E3A2000B5F5F /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +50,7 @@
 		04D426972796B9F3006F6E22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04D4269A2796B9F3006F6E22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04D4269C2796B9F3006F6E22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04E4EB8A2799938D00C5D2FC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		12983CF9DA5FC51E9701E8E6 /* Pods-PivotControlCenterApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PivotControlCenterApp.debug.xcconfig"; path = "Target Support Files/Pods-PivotControlCenterApp/Pods-PivotControlCenterApp.debug.xcconfig"; sourceTree = "<group>"; };
 		CD1CAC84C06743D86BDC0B55 /* Pods_PivotControlCenterApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PivotControlCenterApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9D1BF16835BA07B81188CAC /* Pods-PivotControlCenterApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PivotControlCenterApp.release.xcconfig"; path = "Target Support Files/Pods-PivotControlCenterApp/Pods-PivotControlCenterApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -76,6 +80,7 @@
 		0454645F2796CCC4000B5F5F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0452D36B2798234400E27C15 /* UserInfo.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -97,6 +102,7 @@
 				045464642796D419000B5F5F /* GoogleService-Info.plist */,
 				04D4269C2796B9F3006F6E22 /* Info.plist */,
 				047B8481279826710073BB40 /* UIButton+Additions.swift */,
+				04E4EB8A2799938D00C5D2FC /* Constants.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -302,12 +308,14 @@
 				045464782796EF38000B5F5F /* ProjectsViewController.swift in Sources */,
 				04D426932796B9F2006F6E22 /* HomeViewController.swift in Sources */,
 				045464702796E917000B5F5F /* StorageManager.swift in Sources */,
+				04E4EB8B2799938D00C5D2FC /* Constants.swift in Sources */,
 				04D4268F2796B9F2006F6E22 /* AppDelegate.swift in Sources */,
 				04D426912796B9F2006F6E22 /* SceneDelegate.swift in Sources */,
 				0454646A2796E3A2000B5F5F /* SignUpViewController.swift in Sources */,
 				045464722796E925000B5F5F /* FirestoreManager.swift in Sources */,
 				047B8482279826710073BB40 /* UIButton+Additions.swift in Sources */,
 				045464762796EE31000B5F5F /* TabBarViewController.swift in Sources */,
+				0452D36C2798234400E27C15 /* UserInfo.swift in Sources */,
 				045464742796E935000B5F5F /* DatabaseManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

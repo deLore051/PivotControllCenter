@@ -28,6 +28,8 @@ class SignInViewController: UIViewController {
     private let emailTextField: UITextField = {
         let textField = UITextField()
         textField.translatesAutoresizingMaskIntoConstraints = false
+        textField.autocapitalizationType = .none
+        textField.autocorrectionType = .no
         textField.placeholder = "Email"
         textField.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 20, height: 50))
         textField.leftViewMode = .always
@@ -42,6 +44,9 @@ class SignInViewController: UIViewController {
     private let passwordTextField: UITextField = {
         let textField = UITextField()
         textField.translatesAutoresizingMaskIntoConstraints = false
+        textField.autocapitalizationType = .none
+        textField.autocorrectionType = .no
+        textField.isSecureTextEntry = true
         textField.placeholder = "Password"
         textField.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 20, height: 50))
         textField.leftViewMode = .always
@@ -59,7 +64,8 @@ class SignInViewController: UIViewController {
         button.setTitle("Sign in", for: .normal)
         button.titleLabel?.textAlignment = .center
         button.backgroundColor = .systemBlue
-        button.titleLabel?.font = .systemFont(ofSize: 26, weight: .medium)
+        button.titleLabel?.font = .systemFont(ofSize: 30, weight: .medium)
+        button.setTitleColor(.label, for: .normal)
         button.layer.cornerRadius = 30
         return button
     }()
@@ -138,7 +144,7 @@ class SignInViewController: UIViewController {
         emailTextField.heightAnchor.constraint(equalToConstant: 50).isActive = true
         
         // PasswordTextField
-        passwordTextField.topAnchor.constraint(equalTo: emailTextField.bottomAnchor, constant: 50).isActive = true
+        passwordTextField.topAnchor.constraint(equalTo: emailTextField.bottomAnchor, constant: 20).isActive = true
         passwordTextField.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 20).isActive = true
         passwordTextField.widthAnchor.constraint(equalTo: contentView.widthAnchor, constant: -40).isActive = true
         passwordTextField.heightAnchor.constraint(equalToConstant: 50).isActive = true
@@ -154,6 +160,7 @@ class SignInViewController: UIViewController {
         super.traitCollectionDidChange(previousTraitCollection)
         self.emailTextField.layer.borderColor = UIColor.label.cgColor
         self.passwordTextField.layer.borderColor = UIColor.label.cgColor
+        self.signInButton.setTitleColor(.label, for: .normal)
     }
     
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
