@@ -18,6 +18,7 @@
 		045464762796EE31000B5F5F /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045464752796EE31000B5F5F /* TabBarViewController.swift */; };
 		045464782796EF38000B5F5F /* ProjectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045464772796EF38000B5F5F /* ProjectsViewController.swift */; };
 		0454647A2796F792000B5F5F /* NewProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045464792796F792000B5F5F /* NewProjectViewController.swift */; };
+		046DF3B2279AC7600066B117 /* MKMapView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046DF3B1279AC7600066B117 /* MKMapView+Additions.swift */; };
 		047B8480279822360073BB40 /* ErrorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047B847F279822360073BB40 /* ErrorManager.swift */; };
 		047B8482279826710073BB40 /* UIButton+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047B8481279826710073BB40 /* UIButton+Additions.swift */; };
 		04D4268F2796B9F2006F6E22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D4268E2796B9F2006F6E22 /* AppDelegate.swift */; };
@@ -41,6 +42,7 @@
 		045464752796EE31000B5F5F /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		045464772796EF38000B5F5F /* ProjectsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsViewController.swift; sourceTree = "<group>"; };
 		045464792796F792000B5F5F /* NewProjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewProjectViewController.swift; sourceTree = "<group>"; };
+		046DF3B1279AC7600066B117 /* MKMapView+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MKMapView+Additions.swift"; sourceTree = "<group>"; };
 		047B847F279822360073BB40 /* ErrorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorManager.swift; sourceTree = "<group>"; };
 		047B8481279826710073BB40 /* UIButton+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Additions.swift"; sourceTree = "<group>"; };
 		04D4268B2796B9F2006F6E22 /* PivotControlCenterApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PivotControlCenterApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -103,6 +105,7 @@
 				04D4269C2796B9F3006F6E22 /* Info.plist */,
 				047B8481279826710073BB40 /* UIButton+Additions.swift */,
 				04E4EB8A2799938D00C5D2FC /* Constants.swift */,
+				046DF3B1279AC7600066B117 /* MKMapView+Additions.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -120,8 +123,8 @@
 			isa = PBXGroup;
 			children = (
 				045464752796EE31000B5F5F /* TabBarViewController.swift */,
-				045464792796F792000B5F5F /* NewProjectViewController.swift */,
 				04D426922796B9F2006F6E22 /* HomeViewController.swift */,
+				045464792796F792000B5F5F /* NewProjectViewController.swift */,
 				045464772796EF38000B5F5F /* ProjectsViewController.swift */,
 			);
 			path = Core;
@@ -314,6 +317,7 @@
 				0454646A2796E3A2000B5F5F /* SignUpViewController.swift in Sources */,
 				045464722796E925000B5F5F /* FirestoreManager.swift in Sources */,
 				047B8482279826710073BB40 /* UIButton+Additions.swift in Sources */,
+				046DF3B2279AC7600066B117 /* MKMapView+Additions.swift in Sources */,
 				045464762796EE31000B5F5F /* TabBarViewController.swift in Sources */,
 				0452D36C2798234400E27C15 /* UserInfo.swift in Sources */,
 				045464742796E935000B5F5F /* DatabaseManager.swift in Sources */,
